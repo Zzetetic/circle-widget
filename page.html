@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru" lang="ru">
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<head>
+
+<title></title>
+
+<!-- Подключаем jQuery-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<script type="text/javascript" src="jquery-1.9.1.js"></script>
+</head>
+<body>
+
+<!-- Подключаем скрипт который двигает наши куски -->
+<script src="circle.js"></script>
+<div style="position:absolute; right:0px;">
+left: <input type="text" id="pos_left">
+<br>
+top: <input type="text" id="pos_top">
+<br>
+work <input type="text" id="work_circ">
+<br>
+<button id="for">вперёд</button>
+<button id="back" >назад</button>
+<br>
+</div>
+
+
+
+<map name="map">
+    <area href="#YOUR ANCHOR1" class="area" id="area1" shape="poly" coords="72, 74, 243, 245, 243, 2, 188, 9, 149, 22, 118, 37, 86, 60" />
+	<area href="#YOUR ANCHOR2" class="area" id="area7" shape="poly" coords="248, 244, 248, 1, 289, 6, 323, 14, 355, 28, 381, 42, 402, 58, 416, 75" />
+	<area href="#YOUR ANCHOR3" class="area" id="area4" shape="poly" coords="251, 246, 421, 76, 452, 116, 472, 156, 484, 199, 488, 247" />
+	<area href="#YOUR ANCHOR4" class="area" id="area5" shape="poly" coords="489, 251, 248, 248, 418, 417, 454, 374, 475, 329, 487, 288" />
+	<area href="#YOUR ANCHOR5" class="area" id="area6" shape="poly" coords="247, 251, 413, 420, 381, 446, 342, 467, 304, 480, 267, 486, 248, 487" />
+	<area href="#YOUR ANCHOR6" class="area" id="area8" shape="poly" coords="243, 254, 242, 487, 197, 484, 161, 474, 129, 460, 98, 440, 77, 422" />
+	<area href="#YOUR ANCHOR7" class="area" id="area3" shape="poly" coords="238, 252, 75, 416, 47, 387, 27, 351, 11, 308, 3, 263, 3, 252" />
+	<area href="#YOUR ANCHOR8" class="area" id="area2" shape="poly" coords="239, 247, 69, 77, 47, 105, 24, 144, 8, 192, 1, 247" />
+	</map>
+
+
+<!-- Картинки кусков -->
+<div id="cssont_circ"style="position:absolute; top:300px; left:400px; background-color:red; swidth:1000px; sheight:1000px">
+<div  style="position:relative; margin:0; padding; 0; background-color:red; widtwh:1000px; heisght:1000px">
+
+<img id="circ_1" style="position:absolute; left:73px; top:0px;" src="images/1.png" alt="" usemap="#area1">
+
+
+<img id="circ_2"  style="position:absolute; left:1px; top:77px;" src="images/2.png" alt="" usemap="#area2" >
+
+<img id="circ_3" style="position:absolute; left:1px; top:258px;" src="images/3.png" usemap="#area3" >
+
+<img id="circ_4" style="position:absolute; left:254px; top:77px;" src="images/4.png" usemap="#area4" >
+
+<img id="circ_5" style="position:absolute; left:255px; top:257px;" src="images/5.png" usemap="#area5" >
+
+<img id="circ_6" style="position:absolute; left:254px; top:259px;" src="images/6.png" usemap="#area6" >
+
+<img id="circ_7" style="position:absolute; left:254px; top:-12px;" src="images/7.png" usemap="#area7" >
+
+<img id="circ_8" style="position:absolute; left:77px; top:259px;" src="images/8.png" usemap="#area8" >
+
+<img style="opacity:0; position:absolute; left:8px; top:8px;" src="images/all.png" alt="" usemap="#map" >
+<div id="cont_circ" style="position:absolute; top:0; left:0; background-color:green; opacity:0.5; swidth:1000px; sheight:1000px">
+</div>
+</div>
+</div>
+</body>
+</html>
